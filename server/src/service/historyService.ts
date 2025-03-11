@@ -6,7 +6,7 @@ class City {
 }
 
 class HistoryService {
-  private filePath = 'server/db/db.json';
+  private filePath = './db/db.json';
 
   private async read(): Promise<City[]> {
     const data = await fs.readFile(this.filePath, 'utf-8');
